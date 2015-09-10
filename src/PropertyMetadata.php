@@ -77,7 +77,7 @@ final class PropertyMetadata implements BasePropertyMetadata
     public function unserialize($str)
     {
         list(
-            $this->name,
+            $this->propertyName,
             $this->className,
             $this->fieldName,
             $this->fieldType,
