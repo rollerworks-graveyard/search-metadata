@@ -1,0 +1,9 @@
+id:
+    name: uid
+    type: integer
+
+name:
+    name: username
+    options:
+        name: doctor
+        last: [who, zeus]
