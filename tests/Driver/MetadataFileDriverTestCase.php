@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the RollerworksSearch Component package.
+ * This file is part of the RollerworksSearch package.
  *
  * (c) Sebastiaan Stok <s.stok@rollerscapes.net>
  *
@@ -11,7 +11,6 @@
 
 namespace Rollerworks\Component\Search\Tests\Metadata\Driver;
 
-use Metadata\Driver\FileLocator;
 use Rollerworks\Component\Metadata\Driver\PathByPrefixFileLocator;
 use Rollerworks\Component\Search\Tests\Metadata\MetadataDriverTestCase;
 

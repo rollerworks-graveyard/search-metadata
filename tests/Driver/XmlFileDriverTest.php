@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the RollerworksSearch Component package.
+ * This file is part of the RollerworksSearch package.
  *
  * (c) Sebastiaan Stok <s.stok@rollerscapes.net>
  *
@@ -24,7 +24,7 @@ final class XmlFileDriverTest extends MetadataFileDriverTestCase
     {
         return [
             'Rollerworks\Component\Search\Exception\InvalidArgumentException',
-            '#Unable to parse file ".+[\\\/]Config[\\\/]Entity\.Client\.xml"#i'
+            '#Unable to parse file ".+[\\\/]Config[\\\/]Entity\.Client\.xml"#i',
         ];
     }
 }

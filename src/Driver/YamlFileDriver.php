@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the RollerworksSearch Component package.
+ * This file is part of the RollerworksSearch package.
  *
  * (c) Sebastiaan Stok <s.stok@rollerscapes.net>
  *
@@ -33,7 +33,6 @@ class YamlFileDriver extends AbstractFileDriver
         $properties = [];
 
         try {
-
             $data = Yaml::parse(file_get_contents($file));
         } catch (ParseException $e) {
             $e->setParsedFile($file);

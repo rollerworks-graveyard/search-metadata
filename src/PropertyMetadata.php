@@ -81,8 +81,7 @@ final class PropertyMetadata implements BasePropertyMetadata
             $this->className,
             $this->fieldName,
             $this->fieldType,
-            $this->options,
-        ) = unserialize($str);
+            $this->options) = unserialize($str);
     }
 
     /**

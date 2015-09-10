@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the RollerworksSearch Component package.
+ * This file is part of the RollerworksSearch package.
  *
  * (c) Sebastiaan Stok <s.stok@rollerscapes.net>
  *
@@ -55,9 +55,9 @@ class XmlFileDriver extends AbstractFileDriver
      *
      * @param string $file Path to a file
      *
-     * @return SimpleXMLElement
-     *
      * @throws InvalidArgumentException When loading of XML file returns error
+     *
+     * @return SimpleXMLElement
      */
     private function parseFile($file)
     {

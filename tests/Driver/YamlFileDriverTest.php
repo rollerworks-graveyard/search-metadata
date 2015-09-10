@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the RollerworksSearch Component package.
+ * This file is part of the RollerworksSearch package.
  *
  * (c) Sebastiaan Stok <s.stok@rollerscapes.net>
  *
@@ -26,7 +26,7 @@ final class YamlFileDriverTest extends MetadataFileDriverTestCase
             'Rollerworks\Component\Search\Exception\InvalidArgumentException',
             '#Expected property metadata of class ".+Client" property "name", loaded '.
             'from file ".+/Config[^\.]Entity\.Client\.yml" to contain the following keys: name, type. '.
-            'But the following keys are missing: type.#i'
+            'But the following keys are missing: type.#i',
         ];
     }
 }

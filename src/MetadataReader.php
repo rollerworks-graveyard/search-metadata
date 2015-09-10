@@ -15,7 +15,7 @@ use Rollerworks\Component\Metadata\MetadataFactory;
 use Rollerworks\Component\Metadata\NullClassMetadata;
 
 /**
- * MetadataReader
+ * MetadataReader.
  *
  * @author Sebastiaan Stok <s.stok@rollerscapes.net>
  */

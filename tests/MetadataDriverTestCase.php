@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the RollerworksSearch Component package.
+ * This file is part of the RollerworksSearch package.
  *
  * (c) Sebastiaan Stok <s.stok@rollerscapes.net>
  *
@@ -66,15 +66,15 @@ abstract class MetadataDriverTestCase extends \PHPUnit_Framework_TestCase
         $groupClass = 'Rollerworks\Component\Search\Tests\Metadata\Fixtures\Entity\Group';
 
         $this->assertEquals(
-            new SearchField('uid', $userClass, 'id', true, 'integer', array()),
+            new SearchField('uid', $userClass, 'id', true, 'integer', []),
             $this->reader->getSearchField($userClass, 'uid')
         );
 
         $this->assertEquals(
-            new SearchField('username', $userClass, 'name', false, 'text', array(
+            new SearchField('username', $userClass, 'name', false, 'text', [
                 'name' => 'doctor',
-                'last' => array('who', 'zeus'),
-            )),
+                'last' => ['who', 'zeus'],
+            ]),
             $this->reader->getSearchField($userClass, 'username')
         );
 

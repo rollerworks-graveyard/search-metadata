@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the RollerworksSearch Component package.
+ * This file is part of the RollerworksSearch package.
  *
  * (c) Sebastiaan Stok <s.stok@rollerscapes.net>
  *
@@ -119,8 +119,8 @@ class AnnotationDriver implements MappingDriver
                 'Rollerworks\Component\Search\Metadata\Field'
             );
 
+            /** @var Field|null $annotation */
             if (null !== $annotation) {
-                /** @var Field $annotation */
                 $properties[] = new PropertyMetadata(
                     $className,
                     $reflectionProperty->name,

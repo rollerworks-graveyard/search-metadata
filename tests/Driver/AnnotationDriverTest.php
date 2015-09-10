@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the RollerworksSearch Component package.
+ * This file is part of the RollerworksSearch package.
  *
  * (c) Sebastiaan Stok <s.stok@rollerscapes.net>
  *
@@ -28,7 +28,7 @@ class AnnotationDriverTest extends MetadataDriverTestCase
             'Rollerworks\Component\Search\Exception\InvalidArgumentException',
             '#'.
             preg_quote('Property "type" on annotation "Rollerworks\Component\Search\Metadata\Field" is required', '#').
-            '#i'
+            '#i',
         ];
     }
 }
