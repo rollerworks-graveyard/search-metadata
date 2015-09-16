@@ -18,7 +18,8 @@
         "php": ">=5.4",
         "rollerworks/search": "^1.0.0-beta7",
         "rollerworks/metadata": "^0.4",
-        "doctrine/annotations": "~1.1"
+        "doctrine/annotations": "~1.1",
+        "symfony/yaml": "~2.3"
     },
     "require-dev": {
         "symfony/phpunit-bridge": "~2.7"
