@@ -11,6 +11,7 @@
 
 namespace Rollerworks\Component\Search\Metadata;
 
+use Rollerworks\Component\Metadata\FileTrackingClassMetadata;
 use Rollerworks\Component\Metadata\MetadataFactory;
 use Rollerworks\Component\Metadata\NullClassMetadata;
 
@@ -34,6 +35,16 @@ class MetadataReader implements MetadataReaderInterface
     public function __construct(MetadataFactory $metadataFactory)
     {
         $this->metadataFactory = $metadataFactory;
+    }
+
+    /**
+     * @param string $className
+     *
+     * @return FileTrackingClassMetadata
+     */
+    public static function createClassMetadata($className)
+    {
+        return new FileTrackingClassMetadata($className);
     }
 
     /**

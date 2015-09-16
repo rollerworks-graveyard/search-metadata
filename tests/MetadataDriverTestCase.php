@@ -15,7 +15,6 @@ use Rollerworks\Component\Metadata\Cache\ArrayCache;
 use Rollerworks\Component\Metadata\Cache\Validator\AlwaysFreshValidator;
 use Rollerworks\Component\Metadata\CacheableMetadataFactory;
 use Rollerworks\Component\Metadata\Driver\MappingDriver;
-use Rollerworks\Component\Metadata\FileTrackingClassMetadata;
 use Rollerworks\Component\Search\Metadata\MetadataReader;
 use Rollerworks\Component\Search\Metadata\SearchField;
 use Rollerworks\Component\Search\Searches;
@@ -33,9 +32,7 @@ abstract class MetadataDriverTestCase extends \PHPUnit_Framework_TestCase
             $this->getDriver(),
             new ArrayCache(),
             new AlwaysFreshValidator(),
-            function ($className) {
-                return new FileTrackingClassMetadata($className);
-            }
+            ['Rollerworks\Component\Search\Metadata\MetadataReader', 'createClassMetadata']
         );
 
         $this->reader = new MetadataReader($metadataFactory);
