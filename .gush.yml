@@ -9,6 +9,6 @@ table-pr:
     license: [License, MIT]
 repo_adapter: github
 repo_org: rollerworks
-repo_name: rollerworks-search-jms-metadata
+repo_name: rollerworks-search-metadata
 issue_project_org: rollerworks
 issue_project_name: RollerworksSearch
