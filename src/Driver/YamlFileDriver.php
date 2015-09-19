@@ -44,6 +44,10 @@ class YamlFileDriver extends AbstractFileDriver
             $properties[$propertyName] = $this->createPropertyMetadata($file, $className, $propertyName, $property);
         }
 
+        if (0 === count($properties)) {
+            return;
+        }
+
         return new FileTrackingClassMetadata($className, $properties, [], null, [$class->getFileName(), $file]);
     }
 

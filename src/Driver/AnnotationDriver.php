@@ -131,6 +131,10 @@ class AnnotationDriver implements MappingDriver
             }
         }
 
+        if (0 === count($properties)) {
+            return;
+        }
+
         return new FileTrackingClassMetadata($className, $properties, [], null, [$class->getFileName()]);
     }
 
