@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": ">=5.4",
-        "rollerworks/search": "^1.0.0-beta7",
+        "rollerworks/search": "^1.0.0",
         "rollerworks/metadata": ">=0.5,<2.0",
         "doctrine/annotations": "~1.1",
         "symfony/yaml": "~2.3"
